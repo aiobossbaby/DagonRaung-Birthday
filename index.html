@@ -1,14 +1,18 @@
-# DagonRaung-Birthday<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="my">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ဆရာ ဒဂုန်ရောင် မွေးနေ့ဂုဏ်ပြု & ဆုတောင်း</title>
+
+  <!-- Myanmar Font Import -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap" rel="stylesheet">
+
   <style>
-    @import url('https://i.ibb.co/TDD8F4NM/IMG-20250813-052236-437.jpg');
     body {
       font-family: 'Noto Sans Myanmar', serif;
-      background: linear-gradient(135deg, #000, #4b3b00);
+      background: linear-gradient(135deg, #000, #4b3b00),
+                  url('https://i.ibb.co/TDD8F4NM/IMG-20250813-052236-437.jpg') center/cover no-repeat;
       color: #FFD700;
       margin: 1rem;
       display: flex;
@@ -126,7 +130,6 @@
         return;
       }
 
-      // For demo, just show thank you message and clear form
       thankyouMsg.style.display = 'block';
       setTimeout(() => thankyouMsg.style.display = 'none', 3000);
       wishTextarea.value = '';
